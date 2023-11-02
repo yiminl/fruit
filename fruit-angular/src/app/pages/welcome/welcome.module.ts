@@ -10,7 +10,7 @@ import { RadomService } from 'src/app/service/radom.service';
 
 
 @NgModule({
-  imports: [WelcomeRoutingModule, NzTableModule, FormsModule, CommonModule,],
+  imports: [WelcomeRoutingModule, CommonModule,],
   declarations: [WelcomeComponent],
   exports: [WelcomeComponent],
   providers:[RadomService]
