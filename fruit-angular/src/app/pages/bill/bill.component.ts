@@ -18,7 +18,7 @@ export class BillComponent {
   editCache: { [key: string]: { edit: boolean; data: ItemData } } = {'0': {edit:false,data:{id:'1', name:'zhang 1', amount:100, price:2,discount:0,total:200}}};
   listOfData: ItemData[] = [{id:'1', name:'zhang 1', amount:100, price:2,discount:0,total:200}];
 
-  constructor( public radom: BillComponent) { }
+  //constructor( public radom: BillComponent) { }
 
   startEdit(id: string): void {
     this.editCache[id].edit = true;

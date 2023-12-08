@@ -16,7 +16,7 @@ import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { DemoNgZorroAntdModule } from './ng-zorro-antd.module';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { DragDropModule } from '@angular/cdk/drag-drop';
-import { RadomService } from './service/radom.service';
+import { RadomService } from './service/radom.service';;
 
 registerLocaleData(en);
 
@@ -37,7 +37,7 @@ registerLocaleData(en);
     HttpClientJsonpModule,
     ReactiveFormsModule,
     ScrollingModule,
-    DragDropModule
+    DragDropModule,
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US },
