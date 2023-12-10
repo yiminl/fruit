@@ -7,7 +7,8 @@ import { NzTableModule } from 'ng-zorro-antd/table';
 import { FormsModule } from '@angular/forms';
 import { AddBillComponent } from './add-bill/add-bill.component';
 import { UpdateBillComponent } from './update-bill/update-bill.component';
-
+import { NzModalModule } from 'ng-zorro-antd/modal';
+import { NzButtonModule } from 'ng-zorro-antd/button';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,9 @@ import { UpdateBillComponent } from './update-bill/update-bill.component';
     CommonModule,
     BillRoutingModule,
     NzTableModule,
-    FormsModule
+    NzModalModule,
+    FormsModule,
+    NzButtonModule
   ]
 })
 export class BillModule { }

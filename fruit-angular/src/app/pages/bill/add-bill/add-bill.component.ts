@@ -2,10 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-add-bill',
-  template: './add-bill.component.html',
+  templateUrl: './add-bill.component.html',
   styleUrls: ['./add-bill.component.css']
 })
-
 export class AddBillComponent {
   isVisible = false;
   isConfirmLoading = false;
