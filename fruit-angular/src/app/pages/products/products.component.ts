@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { RadomService } from 'src/app/service/radom.service';
 
 interface ItemData {
@@ -11,15 +12,16 @@ interface ItemData {
 }
 
 @Component({
-  selector: 'app-welcome',
-  templateUrl: './welcome.component.html',
-  styleUrls: ['./welcome.component.css']
+  selector: 'app-products',
+  templateUrl: './products.component.html',
+  styleUrls: ['./products.component.css']
 })
-export class WelcomeComponent implements OnInit {
+export class ProductsComponent {
+  isCollapsed = false;
   editCache: { [key: string]: { edit: boolean; data: ItemData } } = {'0': {edit:false,data:{id:'1', name:'zhang 1', amount:100, price:2,discount:0,total:200}}};
   listOfData: ItemData[] = [{id:'1', name:'zhang 1', amount:100, price:2,discount:0,total:200}];
 
-  constructor( public radom: RadomService) { }
+  constructor( public radom: RadomService, private route: Router) { }
 
   startEdit(id: string): void {
     this.editCache[id].edit = true;

@@ -13,7 +13,7 @@ import { AddCustomersComponent } from './add-customers/add-customers.component';
   ],
   imports: [
     CommonModule,
-    CustomersRoutingModule
+    //CustomersRoutingModule
   ]
 })
 export class CustomersModule { }

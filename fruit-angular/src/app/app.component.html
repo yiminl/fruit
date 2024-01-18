@@ -1,54 +1,29 @@
-<nz-layout class="app-layout">
-  <nz-sider class="menu-sidebar"
-            nzCollapsible
-            nzWidth="256px"
-            nzBreakpoint="md"
-            [(nzCollapsed)]="isCollapsed"
-            [nzTrigger]="null">
-    <div class="sidebar-logo">
-      <a href="https://ng.ant.design/" target="_blank">
-        <img src="https://ng.ant.design/assets/img/logo.svg" alt="logo">
-        <h1>Fruit Bill Info</h1>
-      </a>
-    </div>
-    <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
-      <li nz-submenu nzOpen nzTitle="Dashboard" nzIcon="dashboard">
-        <ul>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/bill">Fruit Bill</a>
-          </li>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/welcome">Welcome</a>
-          </li>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/customers">Customers</a>
-          </li>
-        </ul>
-      </li>
-      <li nz-submenu nzOpen nzTitle="Form" nzIcon="form">
-        <ul>
-          <li nz-menu-item nzMatchRouter>
-            <a>Basic Form</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </nz-sider>
-  <nz-layout>
-    <nz-header>
-      <div class="app-header">
-        <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
-            <span class="trigger"
-               nz-icon
-               [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
-            ></span>
-        </span>
-      </div>
-    </nz-header>
-    <nz-content>
-      <div class="inner-content">
-        <router-outlet></router-outlet>
-      </div>
-    </nz-content>
-  </nz-layout>
-</nz-layout>
+<!-- 
+
+<div class="main">
+  <p class="welcome-message">welcome everyone!</p>
+  <div class="route-links">
+    <nav>
+    <a class="link-button" routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page">登录</a>
+    <a class="link-button" routerLink="/products" routerLinkActive="active" ariaCurrentWhenActive="page">产品</a>
+    </nav>
+  </div>
+</div>
+<div class="content">
+  <router-outlet></router-outlet>
+</div> -->
+
+
+<div class="wrapper">
+  <div style="display: flex; background-color: greenyellow;">
+    <h1 class="title">Angular Router</h1>
+    <nav>
+      <a class="link-button" routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page">登录</a>
+      <a class="link-button" routerLink="/products" routerLinkActive="active" ariaCurrentWhenActive="page">产品</a>
+    </nav>
+  </div>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+
+</div>

@@ -7,7 +7,6 @@ import { RadomService } from './service/radom.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  isCollapsed = false;
-
+  
   constructor(public radom: RadomService) {}
 }
