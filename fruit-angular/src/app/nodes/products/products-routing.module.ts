@@ -9,6 +9,11 @@ const routes: Routes = [
     path: '', 
     component: ProductsComponent, 
     children: [
+      {
+        path: '',
+        redirectTo: 'bill',
+        pathMatch: 'full'
+      },
       { 
         path: 'bill', 
         component:BillComponent,

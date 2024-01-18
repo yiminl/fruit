@@ -17,8 +17,8 @@ import { DemoNgZorroAntdModule } from './ng-zorro-antd.module';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { RadomService } from './service/radom.service';
-import { LoginModule } from './pages/login/login.module';
-import { ProductsModule } from './pages/products/products.module';
+import { LoginModule } from './nodes/login/login.module';
+import { ProductsModule } from './nodes/products/products.module';
 
 registerLocaleData(en);
 
