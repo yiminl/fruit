@@ -1,0 +1,9 @@
+<div class="cvad-doc">cvad-document works!</div>
+
+<button (click)="onClick()">改变颜色</button><br>
+<input type="text" [value]='isActive'>
+<p>{{isActive}}</p>
+<label for="name" [class.active]="isActive" [ngClass]="{'name': true}">name:</label>
+<input type="text " [(ngModel)]="docName" id="name" >
+title: <input type="text " [(ngModel)]="docName">
+

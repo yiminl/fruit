@@ -57,7 +57,7 @@ export class ProductsComponent {
     let price = 0;
     let discount = 0;
 
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 10; i++) {
       name = `Zhang ${i}`;
       amount = 32;
       price = i;

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RadomService } from './service/radom.service';
+import { AuthService } from './service/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +8,9 @@ import { RadomService } from './service/radom.service';
 })
 export class AppComponent {
   
-  constructor(public radom: RadomService) {}
+  constructor(public authService: AuthService) {}
+
+  logout() {
+    this.authService.canActive=false;
+  }
 }

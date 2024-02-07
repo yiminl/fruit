@@ -9,10 +9,10 @@ import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { ScrollingModule } from '@angular/cdk/scrolling';
-import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { IconsProviderModule } from 'src/app/icons-provider.module';
 import { DemoNgZorroAntdModule } from 'src/app/ng-zorro-antd.module';
 import { BillModule } from '../bill/bill.module';
+import { CustomersModule } from '../customers/customers.module';
 
 
 @NgModule({
@@ -23,14 +23,13 @@ import { BillModule } from '../bill/bill.module';
     CommonModule,
     ProductsRoutingModule,
     BillModule,
+    CustomersModule,
     FormsModule,
     NzTableModule,
     NzLayoutModule,
     NzMenuModule,
     IconsProviderModule,
     DemoNgZorroAntdModule,
-    HttpClientModule,
-    HttpClientJsonpModule,
     ReactiveFormsModule,
     ScrollingModule,
     DragDropModule

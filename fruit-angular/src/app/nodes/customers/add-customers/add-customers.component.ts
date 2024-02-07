@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-customers.component.css']
 })
 export class AddCustomersComponent {
+  text1 = 'hello customers!!!'
 
+  constructor() {}
 }

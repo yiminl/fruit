@@ -1,0 +1,17 @@
+<div class="container">
+    <div *ngIf="productsList.length === 0; then noData else listData"></div>
+    <ng-template #noData>没有数据</ng-template>
+    <ng-template #listData>
+        <ul class="nav-sider">
+            <li *ngFor="let item of productsList">
+                <a class="nav-list" routerLink="{{item.name}}" routerLinkActive="active" ariaCurrentWhenActive="page">{{item.id}} {{item.name}}</a> 
+            </li>
+        </ul>
+    </ng-template>
+
+    <div class="content-container">
+        <router-outlet></router-outlet>
+    </div>
+    
+</div>
+

@@ -1,0 +1,19 @@
+table {
+    border: 1px green solid;
+    width: 400px;
+    border-collapse: collapse;
+}
+caption {
+    caption-side: top;
+    text-align: center;
+}
+th, td {
+    border: 1px skyblue solid;
+    text-align: center;
+}
+
+ul {
+    list-style-type: decimal; 
+    list-style-position: inside; 
+    background-color: skyblue; width: 400px;
+}

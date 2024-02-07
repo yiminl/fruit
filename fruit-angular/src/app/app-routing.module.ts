@@ -11,7 +11,11 @@ const routes: Routes = [
   { 
     path: 'products', 
     loadChildren: () => import('./nodes/products/products.module').then(m => m.ProductsModule),
-    canActivate:[authGuard] 
+    canMatch:[authGuard] 
+  },
+  { 
+    path: 'document', 
+    loadChildren: () => import('./nodes/document/document.module').then(m => m.DocumentModule) 
   },
   { path: '',   redirectTo: '/products', pathMatch: 'full' },
   { path: '**', component: LoginComponent }

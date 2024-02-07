@@ -1,40 +1,48 @@
 <div class="container">
     <div class="logo-container"></div>
     <div class="main-container">
+        <!-- <form class="form-colmn" action="http://10.157.14.51:8080/getName"> -->
         <form class="form-colmn">
             <div class="form-row">
-                <label for="xingming">名字: </label>
+                <label for="xingming">名字:</label>
                 <input type="text" name="name"  maxlength="10" id="xingming">
             </div>
             <div class="form-row">
-                <label for="mima">密码: </label>
+                <label for="mima">密码:</label>
                 <input type="password" name="pwd" maxlength="10" id="mima">
             </div>
             <div class="form-row">
-                <label>性别: </label>
+                <label>性别:</label>
                 <input type="radio" name="gender" value="male" checked>男
                 <input type="radio" name="gender" value="female">女
             </div>
             <div class="form-row">
-                <label>爱好: </label>
+                <label>爱好:</label>
                 <input type="checkbox" name="hobby" value="chouyan" checked>抽烟
                 <input type="checkbox" name="hobby" value="hejiu">喝酒
                 <input type="checkbox" name="hobby" value="tangtou" checked>烫头
             </div>
             <div class="form-row">
-                <label for="other">其它: </label>
+                <label for="other">其它:</label>
                 <input type="textarea" name="message" value="你好！" id="other">
             </div>
             <div class="form-row">
-                <label for="hometown">籍贯: </label>
-                <input type="select">
+                <label for="hometown">籍贯:</label> 
+                <select name="nativePlace" id="hometown">
+                    <option value="冀">河北</option>
+                    <option value="苏" selected>江苏</option>
+                    <option value="鲁">山东</option>
+                </select> 
             </div>
             <input type="hidden" name="checInfo" value="321">
-            <div class="form-foot">
-                <input type="submit" value="提交" (click)="onSubmint()">
-                <input type="reset" value="重置">
-            </div>
+            <!-- <input type="submit" value="提交"> -->
         </form>
+        <br>
+        <div class="form-foot">
+            <input type="submit" value="提交" (click)="onSubmint()">
+            <input type="reset" value="重置">
+        </div>
+        
     </div>
     
 </div>
