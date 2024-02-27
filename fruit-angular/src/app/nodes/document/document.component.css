@@ -1,28 +1,40 @@
-.container {
+.document-container {
     display: flex;
     flex-direction: row;
     background-color: lightgray;
-    height: 100vh;
     margin: 0;
     padding: 0;
+    width: 100vw;
+    max-width: 100%;
 }
 
 .nav-sider {
-    flex: 1;
-    background-color: black;
-    width: 10vw;
-    max-width: 10vw;
-    padding-left: 20px;
+    flex: 0 0 156px;
+    background-color: #fff;
+    width: 156px;
+    list-style-type: none;
 }
 
 .nav-list {
-    color: white;
+    color: #171717;
+    padding: 5px;
+    font-size: 20px;
+   
+}
+
+.nav-link {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.nav-list:hover {
+    /* box-shadow: 0px 0px 20px black; */
+    background-color: blue;
 }
 
 .content-container {
     background-color: azure;
-    height: 100vh;
-    width: 90vw;
-    margin: 1vw;
-    padding: 0;
+    width: calc(100vw - 156px);
+    background-color: #e6e6e6;
+    padding: 48px 18px 24px 30px;
 }

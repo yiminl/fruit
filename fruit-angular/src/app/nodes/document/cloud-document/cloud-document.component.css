@@ -17,3 +17,75 @@ ul {
     list-style-position: inside; 
     background-color: skyblue; width: 400px;
 }
+
+.cloud-container {
+    background-color: #fff;
+    height: 100%;
+}
+
+.outer {
+    width: 500px; 
+    background-color: skyblue;
+    border: 1px solid black;
+    position: relative;
+    margin: 10px;
+}
+
+.outer::after {
+    display: block;
+    clear: both;
+    content: '123456789';
+}
+
+.outer:hover .box2 {
+    left: 100px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px black dotted;
+}
+
+.box1 {
+    background-color: orange;
+}
+
+.box2 {
+    background-color: green;
+    position: absolute;
+    top: 0px;
+    transition: all 1s linear;
+}
+
+.box3 {
+    background-color:purple;
+}
+
+.box4 {
+    width: 100px;
+    background-color: red;
+}
+
+.ceshi-1 {
+    height: 500px;
+    background-color:lightgreen; 
+    position: relative; 
+    padding: 20px;
+}
+
+.ceshi-item1 {
+    background-color:orange;
+    padding: 10px;
+    border: 10px solid black;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.ceshi-2 {
+    height: 500px;
+    background-color:aqua;
+}
+

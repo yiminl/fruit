@@ -31,7 +31,7 @@ registerLocaleData(en);
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule,
+    //BrowserAnimationsModule,
     IconsProviderModule,
     NzLayoutModule,
     DemoNgZorroAntdModule,

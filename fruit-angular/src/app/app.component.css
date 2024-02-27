@@ -5,6 +5,7 @@
   border: 1px solid blue;
   height: 10%;
 }
+
 .content {
   height: 90%;
 }
@@ -31,15 +32,16 @@
   
 }
 
-.hearder {
+.app-hearder {
   display: flex; 
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 5%;
+  height: 62px;
   font-family: 'Public Sans',sans-serif;
   font-style: normal;
+  scrollbar-width: thin;
 }
 
 .title {
@@ -80,8 +82,12 @@
   margin: 10px;
 }
 
-.content {
-  background-color: white;
+.app-content {
+  background-color: black;
+  height: calc(100vh - 62px);
+  overflow: auto;
+  scrollbar-width: auto;
+  scrollbar-color: #989898 transparent!important;
 }
 
 a {
