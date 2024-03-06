@@ -10,9 +10,9 @@
 }
 
 .nav-sider {
-    flex: 0 0 156px;
+    flex: 0 0 170px;
     background-color: #fff;
-    width: 156px;
+    width: 170px;
     list-style-type: none;
     height: 100%;
     overflow: auto;
@@ -23,12 +23,13 @@
     color: #171717;
     padding: 5px;
     font-size: 20px;
+    width: 130px;
+    margin: 0 auto;
    
 }
 
 .nav-link {
-    width: 100px;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .nav-list:hover {
@@ -38,7 +39,7 @@
 
 .content-container {
     background-color: azure;
-    width: calc(100vw - 156px);
+    width: calc(100vw - 170px);
     background-color: #e6e6e6;
     padding: 48px 18px 24px 30px;
     height: 100%;
