@@ -85,9 +85,6 @@
 .app-content {
   background-color: black;
   height: calc(100vh - 62px);
-  overflow: auto;
-  scrollbar-width: auto;
-  scrollbar-color: #989898 transparent!important;
 }
 
 a {
